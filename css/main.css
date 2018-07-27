@@ -8,11 +8,23 @@ body, main, html {
 header {
   width: 100%;
   height: 100px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid rgb(72, 158, 214);
+}
+
+img {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.hero-image {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  max-height: 300px;
 }
 
 .logo-image {
   float: left;
+  width: auto;
   padding-left: 1em;
 }
 
@@ -32,8 +44,86 @@ header {
 
 .title {
   color: #9DD0F0;
-  font-weight: 50;
+  font-weight: 100;
   font-family: "Gotham", helvetica, sans-serif;
   font-size: 0.7em;
   margin-top: .1em;
+}
+
+.featured-label {
+  color: #9DD0F0;
+  font-weight: 100;
+  font-family: "Gotham", helvetica, sans-serif;
+  font-size: 1.2em;
+  margin-top: .1em;
+}
+
+.featured-work {
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.article-content {
+  float: right;
+  width: 60%;
+}
+
+.article-title {
+  text-align: right;
+  font-size: 1em;
+  margin: 0 10px 0 10px;
+  color: #2888C7;
+  font-family: "Helvetica-nueu", helvetica, sans-serif;
+  font-weight: 100;
+}
+
+.article-image {
+  width: 40%;
+  margin-bottom: 0;
+}
+
+.featured-article {
+  width: 100%;
+}
+
+.article-text {
+  color: #444;
+  padding-left: 16px;
+}
+
+
+@media screen and (min-width: 600px) {
+  .featured-article {
+    width: 33%;
+  }
+  .article-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+  .article-content {
+    display: block;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+
+  .article-text {
+    padding-left: 0;
+  }
+  .featured-label {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
