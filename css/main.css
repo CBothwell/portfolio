@@ -6,7 +6,11 @@ body, main, html {
 }
 
 header {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
   width: 100%;
+  padding: 6px 6px 0 6px;
   height: 100px;
   border-bottom: 3px solid rgb(72, 158, 214);
 }
@@ -22,15 +26,20 @@ img {
   max-height: 300px;
 }
 
+.log-box {
+  width: 30%;
+}
+
 .logo-image {
-  float: left;
-  width: auto;
-  padding-left: 1em;
+
+  width: 80px;
+  height: 90px;
 }
 
 .name-title {
+  width: 70%;
   text-align: right;
-  padding-right: 1em;
+  justify-content: flex-end;
   text-transform: uppercase;
 }
 
@@ -59,15 +68,17 @@ img {
 }
 
 .featured-work {
-  padding-left: 15px;
-  padding-right: 15px;
   display: flex;
   flex-wrap: wrap;
 }
 
+.featured-article {
+  display: flex;
+  width: 100%;
+}
+
 .article-content {
-  float: right;
-  width: 60%;
+  width: 50%;
 }
 
 .article-title {
@@ -80,19 +91,15 @@ img {
 }
 
 .article-image {
+  padding: 15px;
   width: 40%;
   margin-bottom: 0;
-}
-
-.featured-article {
-  width: 100%;
+  max-height: 200px;
 }
 
 .article-text {
   color: #444;
-  padding-left: 16px;
 }
-
 
 @media screen and (min-width: 600px) {
   .featured-article {
