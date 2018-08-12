@@ -7,10 +7,10 @@ body, main, html {
 
 header {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-content: space-between;
   width: 100%;
-  padding: 6px 6px 0 6px;
+  padding: 6px 12px 0 6px;
   height: 100px;
   border-bottom: 3px solid rgb(72, 158, 214);
 }
@@ -31,15 +31,13 @@ img {
 }
 
 .logo-image {
-
   width: 80px;
   height: 90px;
 }
 
 .name-title {
-  width: 70%;
+  width: 68%;
   text-align: right;
-  justify-content: flex-end;
   text-transform: uppercase;
 }
 
@@ -103,24 +101,23 @@ img {
 
 @media screen and (min-width: 600px) {
   .featured-article {
+    display: block;
     width: 33%;
   }
   .article-image {
-    display: block;
+    padding: 0px;
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    width: 100%;
   }
   .article-content {
-    display: block;
-    float: none;
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    width: 100%;
   }
-
   .article-text {
     padding-left: 0;
+    padding: 15px;
   }
   .featured-label {
     width: 100%;
